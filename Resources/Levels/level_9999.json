@@ -1,0 +1,41 @@
+{
+  "actions" : [
+    {
+      "action" : "spawn",
+      "actionTime" : 200,
+      "objectInstruction" : {
+        "position" : [5,5,0],
+        "visual": {
+          "sprite" : "Sprites/circle",
+          "size" : [0.1,0.1],
+          "color" : [255,0,255]
+        },
+        "rotational" : {
+          "rotationSpeed":0.01
+        },
+        "spawnerInstructions" : [
+          {
+            "objectInstruction": {
+              "visual": {
+                "sprite" : "Sprites/circle",
+                "size" : [0.1,0.1],
+                "color" : [0,0,255]
+              },
+              "translational" : {
+                "speed":0.01,
+                "acceleration":-0.001,
+                "spawnAngleChange":15
+              }
+            },
+            "spawnInstruction": {
+                "poolAmount": 0,
+                "spawnAmount":5,
+                "spawnRate":5
+            }	
+          }
+        ]
+      }
+    }
+  ]
+
+}
